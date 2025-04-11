@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
+import { LoginPage } from "@pages/login/ui/LoginPage";
 
 interface DataResponse {
   message: string;
 }
 
-function App() {
+export const App = ()  => {
   const [data, setData] = useState<string>('');
 
   useEffect(() => {
@@ -16,8 +17,7 @@ function App() {
   return (
     <div>
       <h1>Backend Response: {data}</h1>
+      <LoginPage />
     </div>
   );
 }
-
-export default App;
