@@ -16,7 +16,7 @@ export const App = ()  => {
 
   return (
     <div>
-      <h1>Backend Response: {data}</h1>
+      <h1></h1>
       <LoginPage />
     </div>
   );
