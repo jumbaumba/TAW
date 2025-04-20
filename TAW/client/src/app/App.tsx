@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { LoginPage } from "@pages/login/ui/LoginPage";
+import { Header } from '../widgets/ui/header/Header';
+import { Outlet } from 'react-router-dom';
 
 interface DataResponse {
   message: string;
@@ -15,9 +16,13 @@ export const App = ()  => {
   }, []);
 
   return (
-    <div>
-      <h1></h1>
-      <LoginPage />
-    </div>
+    <>
+    <Header />
+    <main>
+      <h1>Home</h1>
+      <h2>Backend Response: {data}</h2>
+      <Outlet />
+    </main>
+    </>
   );
 }
