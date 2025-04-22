@@ -1,12 +1,17 @@
-
 import express from 'express';
 import cors from 'cors';
+import { sequelize } from '../shared/db/sequelize';
 
 const app = express();
 const port = 3001;
 
 app.use(cors());
 app.use(express.json());
+
+sequelize.sync().then(() => {
+  console.log('DB connected & models synced');
+  
+})
 
 const users = [
   { email: 'test@example.com', password: '123456' },
@@ -37,3 +42,4 @@ app.post('/api/login', (req, res) => {
 app.listen(port, () => {
   console.log(`Сервер запущен на http://localhost:${port}`);
 });
+
