@@ -1,6 +1,6 @@
 
 import { DataTypes } from 'sequelize';
-import { sequelize } from '../shared/db/sequelize';
+import { sequelize } from '../../../shared/db/sequelize';
 
 export const showplaces = sequelize.define('showplaces', {
   id: {
