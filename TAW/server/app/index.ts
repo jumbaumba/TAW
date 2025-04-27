@@ -9,10 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Роуты
-app.use('/api/reviews', reviewRoutes);
-
 // Middleware - глобальная обработка ошибок 
 app.use(errorHandler);
+
+// Роуты
+app.use('/api/reviews', reviewRoutes);
 
 export default app;
