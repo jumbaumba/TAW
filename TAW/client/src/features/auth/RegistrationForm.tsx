@@ -62,6 +62,7 @@ export const RegistrationForm = () => {
         <label>Username</label>
         <Input
           {...register('username', { required: 'Username is required' })}
+          autoComplete='username'
           className="CLASS__NAME"
         />
         {errors.username && <p>{errors.username.message}</p>}
@@ -73,6 +74,7 @@ export const RegistrationForm = () => {
           type="email"
           {...register('email', { required: 'Email is required' })}
           className="CLASS__NAME"
+          autoComplete='email'
         />
         {errors.email && <p>{errors.email.message}</p>}
       </div>
@@ -83,6 +85,7 @@ export const RegistrationForm = () => {
           type="password"
           {...register('password', { required: 'Password is required' })}
           className="CLASS__NAME"
+          autoComplete='new-password'
         />
         {errors.password && <p>{errors.password.message}</p>}
       </div>
@@ -93,6 +96,7 @@ export const RegistrationForm = () => {
           type="password"
           {...register('confirmPassword', { required: 'Confirm Password is required' })}
           className="CLASS__NAME"
+          autoComplete='new-password'
         />
         {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
       </div>

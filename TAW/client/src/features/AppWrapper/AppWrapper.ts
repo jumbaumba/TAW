@@ -11,5 +11,5 @@ export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  return <>{children}</>;
+  return children;
 };

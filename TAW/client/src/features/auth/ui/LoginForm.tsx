@@ -59,6 +59,7 @@ export const LoginForm = () => {
         <label>Email</label>
         <Input
           type="email"
+          autoComplete='email'
           {...register('email')}
           className="CLASS__NAME"
         />
@@ -69,6 +70,7 @@ export const LoginForm = () => {
         <label>Password</label>
         <Input
           type="password"
+          autoComplete='current-password'
           {...register('password')}
           className="CLASS__NAME"
         />
