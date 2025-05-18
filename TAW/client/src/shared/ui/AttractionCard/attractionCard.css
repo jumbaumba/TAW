@@ -1,0 +1,19 @@
+.attractions-wrapper {
+    
+    display: grid;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    grid-template-columns: (1fr repeat(3));
+}
+
+.attraction-card {
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    padding: 30px;
+}
+
+.attraction-card__image{
+    width: '100%';
+    object-fit: 'cover';
+}

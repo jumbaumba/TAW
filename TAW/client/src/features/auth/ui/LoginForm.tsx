@@ -5,6 +5,7 @@ import { Input } from '@shared/ui/input';
 import { Button } from '@shared/ui/Button';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import './index.css'
 
 //схема валидации
 const loginSchema = z.object({
@@ -54,7 +55,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="CLASS__NAME">
+    <form onSubmit={handleSubmit(onSubmit)} className="card">
       <div>
         <label>Email</label>
         <Input

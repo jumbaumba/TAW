@@ -4,7 +4,8 @@ import { LoginPage } from "@pages/login/ui/LoginPage";
 import { HomePage } from "@pages/HomePage/HomePage";
 import { NotFoundPage } from "@pages/notFound/NotFoundPage";
 import RegistrationPage from "@pages/login/ui/RegistrationPage";
-import AttrectionPage from "@pages/AttrectionList/AttrectionPage"
+import AttrectionPage from "@pages/AttrectionList/AttrectionList"// НЕ СУЩЕСТВУЕТ
+import AttractionsList from "@pages/AttrectionList/AttrectionList";
 
 export const router = createBrowserRouter([
     {
@@ -25,7 +26,7 @@ export const router = createBrowserRouter([
         },
         {
           path: 'attrection',
-          element: <AttrectionPage />, 
+          element: <AttractionsList />, 
         },
         {
           path: '*',

@@ -3,6 +3,7 @@ import { Input } from '@shared/ui/input';
 import { Button } from '@shared/ui/Button';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import './index.css'
 
 interface SignupFormValues {
   username: string;
@@ -15,7 +16,6 @@ export const RegistrationForm = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<SignupFormValues>();
 
