@@ -55,9 +55,10 @@ export const LoginForm = () => {
   };
 
   return (
+    <div className='cont'>
     <form onSubmit={handleSubmit(onSubmit)} className="card">
       <div>
-        <label>Email</label>
+        <label className='Email'>Email</label>
         <Input
           type="email"
           autoComplete='email'
@@ -68,7 +69,7 @@ export const LoginForm = () => {
       </div>
 
       <div>
-        <label>Password</label>
+        <label className='Password'>Password</label>
         <Input
           type="password"
           autoComplete='current-password'
@@ -82,5 +83,6 @@ export const LoginForm = () => {
         {loading ? 'Logging in...' : 'Login'}
       </Button>
     </form>
+    </div>
   );
 };

@@ -1,3 +1,4 @@
+ 
   .card {
     font-family: sans-serif;
     width: 300px;
@@ -9,6 +10,12 @@
     background-color: #ffff;
     padding: 1.8rem;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    
   }
   
   .title {
@@ -32,8 +39,12 @@
     color: rgb(170 166 166);
   }
   
-  input[type="text"],
-  input[type="password"] {
+label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input{
     padding: 15px 20px;
     margin-top: 8px;
     margin-bottom: 15px;
@@ -42,7 +53,7 @@
     box-sizing: border-box;
   }
   
-  .cta-btn {
+  button {
     background-color: rgb(69, 69, 185);
     color: white;
     padding: 18px 20px;
@@ -53,8 +64,5 @@
     border: none;
   }
   
-  .forget-pass {
-    text-align: center;
-    display: block;
-  }
-  
+ 
+ 

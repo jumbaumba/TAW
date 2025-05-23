@@ -1,5 +1,6 @@
 body {
     background-color: rgb(228, 229, 247);
+    
   }
 
 .card {
@@ -9,6 +10,7 @@ body {
     background-color: #ffff;
     padding: 30px;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+    
   }
   
 a {
@@ -19,5 +21,16 @@ h1 {
     text-align: center;
     font-weight: bold;
     margin: 0;
+  }
+
+button[type="submit"]{
+    background:-webkit-linear-gradient(360deg, #3f99d5,#245ccc,#465d72);
+    color: white;
+    padding: 18px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
   }
   

@@ -8,7 +8,7 @@ interface AttractionCardProps {
 
 const AttractionCard: React.FC<AttractionCardProps> = ({ name, image, description }) => (
   <div className="attractions-wrapper">
-  <div className="attraction-card" style={{ border: '1px solid #ccc', marginBottom: 12, padding: 12 }}>
+  <div className="attraction-card">
     {image && (
       <img 
         src={image} 

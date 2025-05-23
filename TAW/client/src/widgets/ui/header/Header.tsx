@@ -5,7 +5,7 @@ import './header.css'
 
 export const Header = () => {
   return (
-    <header className="on_top">
+    <header className="on_top ">
       <div className="next_to_top">
         
         <Link to="/" className="logo">
