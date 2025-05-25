@@ -1,0 +1,105 @@
+.attraction {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+  }
+  
+  .back {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .back:hover {
+    text-decoration: underline;
+  }
+  
+  .attraction__name {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .attraction__image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .attraction__description {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .attraction__wikipedia {
+    margin-bottom: 16px;
+  }
+  
+  .attraction__wikipedia-link {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .attraction__wikipedia-link:hover {
+    text-decoration: underline;
+  }
+  
+  .attraction__location {
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+  }
+  
+  .attraction__map {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  
+  .attraction__address,
+  .attraction__kinds {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .attraction__kinds {
+    margin-top: 24px;
+  }
+  
+  .attraction__kinds h4 {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .attraction__kinds-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .attraction__kind {
+    padding: 6px 12px;
+    border: 1px solid #0077cc;
+    border-radius: 20px;
+    background-color: #f0f8ff;
+    color: #0077cc;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }  
+  
+  .loading,
+  .not-found {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 40px;
+  }

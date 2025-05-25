@@ -1,26 +1,34 @@
 import React from 'react';
-import './AttractionCard.css'
+import { Link } from 'react-router-dom';
+import './AttractionCard.css';
+
 interface AttractionCardProps {
+  id: string;
   name: string;
   image?: string;
   description?: string;
 }
 
-const AttractionCard: React.FC<AttractionCardProps> = ({ name, image, description }) => (
-  <div className="attractions-wrapper">
+const AttractionCard: React.FC<AttractionCardProps> = ({ id, name, image, description }) => (
   <div className="attraction-card">
     {image && (
-      <img 
-        src={image} 
-        alt={name} 
+      <img
+        src={image}
+        alt={name}
         className="attraction-card__image"
       />
     )}
-    <h3>{name || 'Без названия'}</h3>
-    <p>{description ? description : 'Описание отсутствует'}</p>
+    <h3 className="attraction-card__name" title={name}>{name || 'Без названия'}</h3>
+    <p className="attraction-card__description" title={description}>
+      {description || 'Описание отсутствует'}
+    </p>
+    <Link
+      to={`/attrection/${id}`}
+      className="attraction-card__link"
+    >
+      Подробнее
+    </Link>
   </div>
-  </div>
-  
 );
 
 export default AttractionCard;

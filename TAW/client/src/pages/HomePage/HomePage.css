@@ -1,0 +1,22 @@
+.begin{
+    padding-top:200px ;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border: 2px skyblue;
+}
+
+.main_card{
+width: 300px;
+
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+position: absolute;
+
+}
+
+a{
+    font-size: larger;
+}

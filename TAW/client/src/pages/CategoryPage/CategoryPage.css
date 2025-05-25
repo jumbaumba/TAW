@@ -1,0 +1,26 @@
+.category-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+  }
+  
+  .category-page__title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  .category-page__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px; 
+    padding: 16px;
+  }
+  
+  .category-page__loading,
+  .category-page__empty {
+    text-align: center; 
+    font-size: 1.1rem;
+    padding: 40px 0;
+  }

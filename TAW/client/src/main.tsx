@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { store } from '@shared/store';
 import { router } from '@app/routing/routes';
 import './index.css';
+import 'leaflet/dist/leaflet.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

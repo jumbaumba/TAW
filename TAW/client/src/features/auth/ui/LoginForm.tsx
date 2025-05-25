@@ -56,33 +56,34 @@ export const LoginForm = () => {
 
   return (
     <div className='cont'>
-    <form onSubmit={handleSubmit(onSubmit)} className="card">
-      <div>
-        <label className='Email'>Email</label>
-        <Input
-          type="email"
-          autoComplete='email'
-          {...register('email')}
-          className="CLASS__NAME"
-        />
-        {errors.email && <p>{errors.email.message}</p>}
-      </div>
+      
+      <form onSubmit={handleSubmit(onSubmit)} className="login-form">
+        <div className='login-form__field'>
+          <label className='login-form__label'>Email</label>
+          <Input
+            type="email"
+            autoComplete='email'
+            {...register('email')}
+            className="login-form__input"
+          />
+          {errors.email && <p>{errors.email.message}</p>}
+        </div>
 
-      <div>
-        <label className='Password'>Password</label>
-        <Input
-          type="password"
-          autoComplete='current-password'
-          {...register('password')}
-          className="CLASS__NAME"
-        />
-        {errors.password && <p>{errors.password.message}</p>}
-      </div>
+        <div className='login-form__field'>
+          <label className='login-form__label'>Password</label>
+          <Input
+            type="password"
+            autoComplete='current-password'
+            {...register('password')}
+            className="login-form__input"
+          />
+          {errors.password && <p>{errors.password.message}</p>}
+        </div>
 
-      <Button type="submit" disabled={loading}>
-        {loading ? 'Logging in...' : 'Login'}
-      </Button>
-    </form>
+        <Button type="submit" disabled={loading}>
+          {loading ? 'Logging in...' : 'Login'}
+        </Button>
+      </form>
     </div>
   );
 };
